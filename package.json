@@ -1,0 +1,34 @@
+{
+  "name": "airbus-efb-premium",
+  "version": "1.0.0",
+  "description": "Offline Airbus EFB dashboard for iPad and GitHub Pages",
+  "main": "app.js",
+  "scripts": {
+    "dev": "npx serve .",
+    "build": "echo 'Static site - no build needed'",
+    "lint": "echo 'No linter configured'",
+    "test": "echo 'No tests configured'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NCL-Plane-Spotting/airbus-efb-premium.git"
+  },
+  "keywords": [
+    "airbus",
+    "efb",
+    "aviation",
+    "dashboard",
+    "offline",
+    "pwa"
+  ],
+  "author": "NCL-Plane-Spotting",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NCL-Plane-Spotting/airbus-efb-premium/issues"
+  },
+  "homepage": "https://github.com/NCL-Plane-Spotting/airbus-efb-premium#readme",
+  "dependencies": {
+    "@vercel/speed-insights": "^1.0.12"
+  },
+  "devDependencies": {}
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Offline Airbus EFB dashboard for iPad">
+    <meta name="theme-color" content="#1a1a2e">
+    <title>Airbus EFB Premium</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="icon-192.png">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Airbus EFB Premium</h1>
+            <p class="subtitle">Electronic Flight Bag Dashboard</p>
+        </header>
+        
+        <main>
+            <div class="status-panel">
+                <h2>System Status</h2>
+                <div class="status-indicator">
+                    <span class="status-dot online"></span>
+                    <span>System Online</span>
+                </div>
+            </div>
+            
+            <div class="dashboard-grid">
+                <div class="card">
+                    <h3>Flight Information</h3>
+                    <div class="info-item">
+                        <span class="label">Flight Number:</span>
+                        <span class="value" id="flight-number">--</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="label">Route:</span>
+                        <span class="value" id="route">--</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="label">Aircraft:</span>
+                        <span class="value" id="aircraft">A320</span>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <h3>Navigation</h3>
+                    <div class="info-item">
+                        <span class="label">Altitude:</span>
+                        <span class="value" id="altitude">-- ft</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="label">Speed:</span>
+                        <span class="value" id="speed">-- kts</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="label">Heading:</span>
+                        <span class="value" id="heading">--°</span>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <h3>Weather</h3>
+                    <div class="info-item">
+                        <span class="label">Temperature:</span>
+                        <span class="value" id="temperature">-- °C</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="label">Wind:</span>
+                        <span class="value" id="wind">--</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="label">Visibility:</span>
+                        <span class="value" id="visibility">--</span>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <h3>Quick Actions</h3>
+                    <button class="action-btn">Performance Calculator</button>
+                    <button class="action-btn">Charts</button>
+                    <button class="action-btn">Documentation</button>
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <p>&copy; 2026 Airbus EFB Premium. All rights reserved.</p>
+            <p class="offline-status">Offline mode enabled</p>
+        </footer>
+    </div>
+    
+    <script src="app.js"></script>
+    <!-- Vercel Speed Insights -->
+    <script>
+        window.si = window.si || function () { (window.siq = window.siq || []).push(arguments); };
+    </script>
+    <script defer src="/_vercel/speed-insights/script.js"></script>
+</body>
+</html>
